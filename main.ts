@@ -1,4 +1,7 @@
-let makeSound = (sound: String) => {
-    console.log(`Makes: ${sound}!`);
-};
 
+import {Dog} from './animals'
+
+
+
+let goat = new Dog();
+goat.makeSound();
