@@ -5,8 +5,8 @@ class Animal {
     }
 
     makeSound = () => {
-        if (this._sound) {
-            console.log(`Makes: ${this._sound}!`);
+        if (this._type && this._sound) {
+            console.log(`${this._type} makes: ${this._sound}!`);
         } else {
             console.log('There is no sound.')
         }
