@@ -18,3 +18,9 @@ export class Dog extends Animal {
         super(type, sound);
     }
 }
+
+export class Cat extends Animal {
+    constructor(type = 'Cat', sound = 'Meow'){
+        super(type, sound);
+    }
+}
