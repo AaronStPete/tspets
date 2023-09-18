@@ -8,7 +8,7 @@ private class Animal {
     }
 
     makeSound(sound: String) {
-        console.log(`Makes: ${sound}`)
+        console.log(`Makes: ${sound}!`)
     }
 }
 
