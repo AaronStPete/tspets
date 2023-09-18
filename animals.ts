@@ -1,12 +1,13 @@
 class Animal {
-    constructor(private _type?:string, private _sound?: string){
+    constructor(public name:string, private _type?:string, private _sound?: string){
+        this.name = name;
         this._type = _type;
         this._sound = _sound;
     }
 
     makeSound = () => {
         if (this._type && this._sound) {
-            console.log(`${this._type} makes: ${this._sound}!`);
+            console.log(`${this.name} the ${this._type} makes: ${this._sound}!`);
         } else {
             console.log('There is no sound.')
         }
@@ -14,13 +15,13 @@ class Animal {
 }
 
 export class Dog extends Animal {
-    constructor(type = 'Dog', sound = 'Bark'){
-        super(type, sound);
+    constructor(name:string, type = 'Dog', sound = 'Bark'){
+        super(name, type, sound);
     }
 }
 
 export class Cat extends Animal {
-    constructor(type = 'Cat', sound = 'Meow'){
-        super(type, sound);
+    constructor(name:string, type = 'Cat', sound = 'Meow'){
+        super(name, type, sound);
     }
 }
